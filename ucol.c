@@ -24,7 +24,7 @@
 
 #define COLMAX 256
 
-static const char ver[] = "ucol.c 2.3 2018-06-12\n";
+static const char ver[] = "ucol.c 2.3.0 2018-06-13\n";
 static const char pgm[] = "UCOL";
 
 int
@@ -45,7 +45,7 @@ main(int argc, char * * argv) {
 
     if (argc == 1) {
         fprintf(stderr, "%s %s", pgm, ver);
-        fprintf(stderr, "%s options columns filename\n", argv[0]);
+        fprintf(stderr, "%s [-dDno] column-numbers [filename]\n", argv[0]);
         fprintf(stderr, "  -dc       use 'c' as input column delimiter\n");
         fprintf(stderr, "            (default whitespace)\n");
         fprintf(stderr, "  -Dc       use 'c' as output column delimiter\n");
